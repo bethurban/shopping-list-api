@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   skip_before_action :verify_authenticity_token
-  before_action :set_item, only: [:show, :update, :delete]
+  before_action :set_item, only: [:show, :update, :destroy]
 
   def index
     @items = Item.all
