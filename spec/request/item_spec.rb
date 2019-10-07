@@ -37,7 +37,7 @@ RSpec.describe 'items API', type: :request do
     end
 
     context 'when record does not exist' do
-      let (:article_id) { 100 }
+      let (:item_id) { 100 }
 
       it 'returns status code 404' do
         expect(response).to have_http_status(404)
